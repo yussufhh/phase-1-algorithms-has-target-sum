@@ -1,5 +1,17 @@
-function hasTargetSum(array, target) {
+const myArray = [3, 8, 12, 4, 11, 7]
+const target = 10;
+
+function hasTargetSum(myArray, target) {
+ 
   // Write your algorithm here
+   
+  for(let i = 0; i<myArray.length;i++){
+    for(let m = i+1; m<myArray.length;m++){
+      if(myArray[i] + myArray[m] === target)
+        return true
+    }
+  }
+  return false
 }
 
 /* 
